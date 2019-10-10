@@ -1,4 +1,5 @@
 From python
-COPY Lab /usr/local/Lab
+COPY . /usr/local/Lab
 RUN cd /usr/local/Lab
-RUN pip install requirements.txt
+RUN chmod +x /usr/local/Lab/run.sh
+RUN pip install boto3
